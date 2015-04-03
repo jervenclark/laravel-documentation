@@ -1,6 +1,6 @@
 <?php 
 	require __DIR__ . '/src/parse_md.php';	
-	$docs = new Parse_MD('\..\src\assets\md\\');
+	$docs = new Parse_MD();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,7 @@
 	<title>Laravel Docs</title>
 	<link type="text/css" rel="stylesheet"  href="public/bootstrap/dist/css/bootstrap.min.css" >
 	<style type="text/css">
-		.h1, .h2, .h3, h1, h2, h3, #documentation {
+		.h1, .h2, .h3, h1, h2, h3, #documentation, footer {
 			margin-top: 50px;
 			margin-bottom: 20px;
 		}
@@ -59,6 +59,11 @@
 <body>
 	<div id="main-container" class="container">
 		<div class="row">
+			<div class="col-md-12">
+				<h1>Laravel Documentation</h1>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-md-3">
 				<ul class="nav nav-pills nav-stacked" role="tablist" id="documentation">
 					<?php
@@ -78,6 +83,18 @@
 				</div>
 			</div>			
 		</div>
+
+		<footer class="row">
+			<div class="col-md-9 col-md-offset-3">
+				<hr />
+				<p><a href="http://laravel.com/">Laravel</a> is a trademark of Taylor Otwell. Copyright &copy; Taylor Otwell.<br /> 
+				    <a href="https://github.com/laravel/docs"><span class="label label-primary">Laravel</span></a> 
+					<a href="https://github.com/twbs/bootstrap"><span class="label label-primary">Bootstrap</span></a> 
+					<a href="https://github.com/kzykhys/Ciconia"><span class="label label-primary">Ciconia</span></a>
+					| <i class="icon-user"></i>Compiled by <a href="#">Jerven Clark Chua</a> from <a href="https://github.com/laravel/docs">Laravel Docs</a>
+				</p>
+			</div>
+		</footer>
 		<script src="public/jquery/dist/jquery.min.js"></script>    
 		<script src="public/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script>
