@@ -14,27 +14,16 @@ Requirements
 Installation
 ------------
 
-create a `composer.json`
+clone the repository
 
-``` json
-{
-	"repositories": [
-	{
-		"type": "git",
-		"url": "https://github.com/jervenclark/docs"
-	}
-	],
-	"require": {
-		"kzykhys/ciconia":"~1.0.0",
-		"laravel/docs":"dev-with-composer"
-	}
-}
+```
+git clone https://github.com/jervenclark/laravel-documentation
 ```
 
 and run
 
 ```
-php composer.phar install
+php composer.phar update
 ```
 
 License
@@ -45,7 +34,7 @@ The MIT License
 Contributing
 ------------
 
-Feel free to fork this repository and send a pull request. ([A list of contributors][contributors])
+Feel free to fork this repository and send a pull request.
 
 Author
 ------
