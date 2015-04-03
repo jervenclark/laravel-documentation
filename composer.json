@@ -1,0 +1,12 @@
+{
+	"repositories": [
+	{
+		"type": "git",
+		"url": "https://github.com/jervenclark/docs"
+	}
+	],
+	"require": {
+		"kzykhys/ciconia":"~1.0.0",
+		"laravel/docs":"dev-with-composer"
+	}
+}
