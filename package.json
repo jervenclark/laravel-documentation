@@ -1,0 +1,11 @@
+{
+  "name": "laravel-documentation",
+  "version": "5.1",
+  "devDependencies": {
+  },
+  "scripts": {
+    "postinstall": "composer update"
+  },
+  "dependencies": {
+  }
+}
